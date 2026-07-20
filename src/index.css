@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base style layers and focus outlines */
+@layer base {
+  body {
+    @apply antialiased scroll-smooth;
+  }
+  
+  :focus-visible {
+    @apply outline-2 outline-emerald-500 outline-offset-2;
+  }
+}
+
+/* Customized scrollbar design for the catalog container list */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-900 rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-emerald-500 transition-colors;
+}
+
+/* Custom background pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(circle, #0D9488 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Pulse animation helper */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}

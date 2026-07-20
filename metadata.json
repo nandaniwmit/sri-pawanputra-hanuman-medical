@@ -1,0 +1,6 @@
+{
+  "name": "Sri Pawanputra Hanuman Medical",
+  "description": "A modern, responsive, and SEO-optimized website for Sri Pawanputra Hanuman Medical Store in Gaya, Bihar. Features medicine search, WhatsApp prescription upload, local pharmacy services, and contact information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
