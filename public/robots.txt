@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sri-pawanputra-hanuman-medical.vercel.app/sitemap.xml
