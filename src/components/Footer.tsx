@@ -150,7 +150,7 @@ export default function Footer({ setActiveTab }: FooterProps) {
         {/* Legal & Footer Bottom */}
         <div className="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <p>© {new Date().getFullYear()} Sri Pawanputra Hanuman Medical. All rights reserved. | Developed by <a href="https://main.webmakerit.com" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 underline decoration-dotted underline-offset-2 transition-colors">WMIT</a></p>
+            <p>© {new Date().getFullYear()} Sri Pawanputra Hanuman Medical. All rights reserved. | Developed by <a href="#" className="wmit-popup-trigger hover:text-white underline transition-colors" target="_blank" rel="noopener noreferrer">Developed by WMIT</a></p>
             <p className="mt-1 text-[10px]">Licensed Retail Chemist & Druggist. Gaya, Bihar, India.</p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
